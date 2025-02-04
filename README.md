@@ -37,5 +37,7 @@ The commands below assume that all scripts are located in $BASE_DIR/scripts
 6. `sbatch 5_sbatch_featurecounts.sh`
 7. `bash 6_run_multiqc.sh`
 
+## Adjustments
 
+modified fastqc script
 

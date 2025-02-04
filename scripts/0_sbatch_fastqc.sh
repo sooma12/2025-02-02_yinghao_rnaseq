@@ -24,7 +24,7 @@ echo "script directory: $SCRIPT_DIR"
 mkdir -p $FASTQDIR_UNTRIMMED $FASTQC_OUT_DIR $SCRIPT_DIR
 
 echo "Running fastqc in directory $FASTQDIR_UNTRIMMED"
-fastqc $FASTQDIR_UNTRIMMED/*.fastq
+fastqc $FASTQDIR_UNTRIMMED/*.fastq.gz
 
 echo "Cleaning up logs and output files"
 mkdir -p $SCRIPT_DIR/logs
