@@ -4,10 +4,10 @@
 #SBATCH --time=02:00:00
 #SBATCH -N 1
 #SBATCH -n 2
-#SBATCH --output=<>
-#SBATCH --error=<>
+#SBATCH --output=/work/geisingerlab/Mark/rnaSeq/2025-02-02_yh_bsub/logs/%x-%j.log
+#SBATCH --error=/work/geisingerlab/Mark/rnaSeq/2025-02-02_yh_bsub/logs/%x-%j.err
 #SBATCH --mail-type=END
-#SBATCH --mail-user=<>
+#SBATCH --mail-user=soo.m@northeastern.edu
 
 echo "Starting fastqc SBATCH script $(date)"
 

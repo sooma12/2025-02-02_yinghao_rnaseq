@@ -2,14 +2,14 @@
 #SBATCH --partition=short
 #SBATCH --job-name=samtools_to_sorted_bam
 #SBATCH --time=04:00:00
-#SBATCH --array=<>
-#SBATCH --ntasks=<>
+#SBATCH --array=1-12%13
+#SBATCH --ntasks=12
 #SBATCH --mem=100G
 #SBATCH --cpus-per-task=1
-#SBATCH --output=<>
-#SBATCH --error=<>
-#SBATCH --mail-type=END,FAIL
-#SBATCH --mail-user=<>
+#SBATCH --output=/work/geisingerlab/Mark/rnaSeq/2025-02-02_yh_bsub/logs/%x-%A-%a.log
+#SBATCH --error=/work/geisingerlab/Mark/rnaSeq/2025-02-02_yh_bsub/logs/%x-%A-%a.err
+#SBATCH --mail-type=END
+#SBATCH --mail-user=soo.m@northeastern.edu
 
 echo "Loading tools"
 module load samtools/1.19.2
