@@ -39,5 +39,6 @@ The commands below assume that all scripts are located in $BASE_DIR/scripts
 
 ## Adjustments
 
-modified fastqc script
+- Modified fastqc script to work on gzipped fastq files
+- Modified sample sheet script (2) to find gzipped fastq files
 
